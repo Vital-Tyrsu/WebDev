@@ -1,0 +1,27 @@
+body {
+    background-color: lightblue;
+}
+
+h1 {
+    color: green;
+}
+
+legend {
+    background-color: red;
+    width: 10em;
+    height: 4em;
+    color: white;
+}
+
+fieldset {
+    border-color: black;
+    border-width: 6px;
+}
+
+.gender{
+
+   background-color: lightgreen;
+   max-width: 30em;
+   border-color: black;
+   border-width: 5px;
+}

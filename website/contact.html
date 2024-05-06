@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Contactez-nous | LvComptaLily</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 X-Content-Type-Options=nosniff">
+    <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/contact.css">
+
+    <!-- CSS only -->
+    <link rel="shortcut icon" type="image/x-icon" href="img/LogoBedrijf2.png">
+    <meta name="google-site-verification" content="ZJUrD0UmcI9AILP5rYW5_AhqX4toLL2cZNw4bclcUt4" />
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-226691811-1');
+    </script>
+</head>
+
+<body>
+    <!-- Messenger Chat plugin Code -->
+    <div id="fb-root"></div>
+
+    <!-- Your Chat plugin code -->
+    <div id="fb-customer-chat" class="fb-customerchat">
+    </div>
+
+    <script>
+        var chatbox = document.getElementById('fb-customer-chat');
+        chatbox.setAttribute("page_id", "103278992387308");
+        chatbox.setAttribute("attribution", "biz_inbox");
+    </script>
+
+    <!-- Your SDK code -->
+    <script>
+        window.fbAsyncInit = function () {
+            FB.init({
+                xfbml: true,
+                version: 'v13.0'
+            });
+        };
+
+        (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s);
+            js.id = id;
+            js.src = 'https://connect.facebook.net/fr_FR/sdk/xfbml.customerchat.js';
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
+    <header>
+        <div class="wrapper">
+            <h1 id="logo">
+                <a href="index.html"><img src="img/LogoBedrijf2.png" alt="comptabilité">
+                </a>
+            </h1>
+            <nav>
+                <ul id="mainmenu">
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="service.html">Services</a></li>
+                    <li><a href="about.html">À propos</a></li>
+                    <li class="active"><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="wrapper">
+        <section class="main_bottom">
+            <h1 class="titel">Vos coordonnées</h1>
+            <div class="content">
+                <div class="column">
+                    <div class="contact_info">
+                        <form action="SEND ADDRESS" id="ft-form" method="POST" accept-charset="UTF-8">
+                            <fieldset>
+                              <legend>For person</legend>
+                              <label>
+                                Name
+                                <input type="text" name="name" required>
+                              </label>
+                              <div class="two-cols">
+                                <label>
+                                  Email address
+                                  <input type="email" name="email" required>
+                                </label>
+                                <label>
+                                  Phone number
+                                  <input type="tel" name="phone">
+                                </label>
+                              </div>
+                            </fieldset>
+                            <fieldset>
+                              <legend>Appointment request</legend>
+                              <div class="two-cols">
+                                <label>
+                                  Datum
+                                  <input type="date" name="Appointment request" required>
+                                </label>
+                                <div class="inline">
+                                  <label>
+                                    <input type="hidden" name="Morning desired" value="no">
+                                    <input type="checkbox" name="Morning desired" value="yes">
+                                    Morning
+                                  </label>
+                                  <label>
+                                    <input type="hidden" name="Afternoon desired" value="no">
+                                    <input type="checkbox" name="Afternoon desired" value="yes">
+                                    Afternoon
+                                  </label>
+                                </div>
+                              </div>
+                              <p>Confirmation requested by</p>
+                              <div class="inline">
+                                <label>
+                                  <input type="radio" name="Confirmation requested by" value="email" checked>
+                                  Email
+                                </label>
+                                <label>
+                                  <input type="radio" name="Confirmation requested by" value="phone">
+                                  Phone call
+                                </label>
+                              </div>
+                            </fieldset>
+                            <div class="btns">
+                              <input type="text" name="_gotcha" value="" style="display:none;">
+                              <input type="submit" value="Submit request">
+                            </div>
+                          </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="wrapper">
+            <div class="grid">
+                <div class="column">
+                    <a href="https://www.google.com/maps/place/LvComptaLily/@50.8120718,4.317062,17z/data=!3m1!4b1!4m5!3m4!1s0x47c3c50839aa5f8d:0x5dada499baf94171!8m2!3d50.8120684!4d4.3192507"
+                        target="blank">
+                        <span class="material-icons">
+                            place
+                        </span>
+                    </a>
+                    <p>
+                        Addresse : Chaussée de Bruxelles 34 , 1190 Forest
+                    </p>
+                </div>
+
+                <div class="column">
+                    <a href="tel:+3222017907">
+                        <span class="material-icons">
+                            phone
+                        </span>
+                    </a>
+                    <p>
+                        Tél : <a href="tel:+3222017907">02/201.79.07</a>
+                    </p>
+                </div>
+
+                <div class="column">
+                    <a href="mailto:liliana@lvcompta.be">
+                        <span class="material-icons">
+                            mail
+                        </span>
+                    </a>
+                    <p>
+                        Email: <a href="mailto:liliana@lvcompta.be">liliana@lvcompta.be</a>
+                    </p>
+                </div>
+
+                <div class="column">
+                    <ul class="hours">
+                        <li>
+                            <h2>Heures d'ouverture</h2>
+                        </li>
+                        <li>Lundi<span>09:00-18:00</span></li>
+                        <li>Mardi<span>09:00-19:00</span></li>
+                        <li>Mercredi<span>fermé</span></li>
+                        <li>Jeudi<span>09:00-18:00</span></li>
+                        <li>Vendredi<span>09:00-20:00</span></li>
+                        <li>Samedi <span>13:00-18:00</span></li>
+                    </ul>
+                </div>
+    </main>
+    <footer>
+        <div class="flex">
+            <div class="kolom">
+                <ul class="hours">
+                    <li>
+                        <h2>Contact</h2>
+                    </li>
+                    <li>Stagiaire Expert - Comptable</li>
+                    <li>I.T.A. A. 52-348-977</li>
+                    <li>TVA BE 0769.545.144</li>
+                    <li>Fix: 02/201.79.07</li>
+                    <li>G.S.M. : +32/489 26 76 75</li>
+                    <li>liliana@lvcompta.be</li>
+                </ul>
+            </div>
+            <div class="kolom">
+                <p class="stib">T</p><a class="line" id="tram82">82</a><a class="line" id="tram97">97</a>
+                <br>
+                <p class="stib">B</p><a class="line" id="bus50">50</a><a class="line" id="bus52">52</a><a class="line"
+                    id="bus54">54</a><a class="line" id="bus74">74</a>
+
+                <p>Copyright &copy; 2021 LvComptaLily. All Rights Reserved</p>
+            </div>
+            <div class="kolom">
+
+                <ul class="hours">
+                    <li>
+                        <h2>Heures d'ouverture</h2>
+                    </li>
+                    <li>Lundi<span>09:00-18:00</span></li>
+                    <li>Mardi<span>09:00-19:00</span></li>
+                    <li>Mercredi<span>fermé</span></li>
+                    <li>Jeudi<span>09:00-18:00</span></li>
+                    <li>Vendredi<span>09:00-20:00</span></li>
+                    <li>Samedi <span>13:00-18:00</span></li>
+                </ul>
+
+            </div>
+        </div>
+
+
+    </footer>
+</body>
+
+</html>

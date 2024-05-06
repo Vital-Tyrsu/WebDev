@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registratieformulier</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <h1>Registratieformulier</h1>
+
+    <p>* verplicht veld</p>
+
+    <form>
+        <fieldset>
+            <legend>Persoonlijke gegevens</legend>
+            <p>
+                <label for="voornaam">Voornaam *</label>
+                <input type="text" id="voornaam" autofocus required>
+            </p>
+
+            <p>
+                <label for="naam">Naam *</label>
+                <input type="text" id="naam" required>
+            </p>
+
+            <p>
+                <label for="straat">Straat *</label>
+                <input type="text" id="straat" required>
+            </p>
+
+            <p>
+                <label for="nummer">Nummer *</label>
+                <input type="number" id="nummer" required>
+            </p>
+
+            <p>
+                <label for="postcode">Postcode *</label>
+                <input type="number" id="postcode" required>
+            </p>
+
+            <p>
+                <label for="gemeente">Gemeente *</label>
+                <input type="text" id="gemeente" required>
+            </p>
+
+            <p>
+                <label for="land">Land: </label>
+                <select id="land">
+                    <option value="-1">België</option>
+                    <option value="0">Duitsland</option>
+                    <option value="1">Frankrijk</option>
+                    <option value="2">Luxemburg</option>
+                    <option value="3">Nederland</option>
+                    <option value="4">Verenigd Koninkrijk</option>
+                </select>
+            </p>
+
+            <p>
+                <label for="date">Geboortedatum</label>
+                <input type="date" id="date">
+            </p>
+
+            <p>
+                <label for="GSM">GSM * </label>
+                <input type="tel" id="GSM" required>
+            </p>
+
+            <p>
+                <label for="email">E-mail *</label>
+                <input type="email" id="email" required>
+            </p>
+
+            <p>
+                <label for="passwoord">Paswoord *</label>
+                <input type="password" id="passwoord">
+            </p>
+
+            <p>
+                <label for="repeatpasswoord"> Bevestig Paswoord *</label>
+                <input type="password" id="repeatpasswoord">
+            </p>
+
+            <p class="gender">
+                <label> Geslacht * </label>
+                <label><input type="radio" name="geslacht">Niet van toepassing</label>
+                <label><input type="radio" name="geslacht">Man</label>
+                <label><input type="radio" name="geslacht">Vrouw</label>
+            </p>
+
+        </fieldset>
+
+        <fieldset>
+            <legend>School</legend>
+
+            <label for="education">Opleiding:</label>
+            <select id="education">
+                <option value="-1">Graduaat Programmeren</option>
+                <option value="0">Graduaat Programmeren</option>
+                <option value="1">middelbare school</option>
+                <option value="2">hoger onderwijs</option>
+                <option value="3">doctoraat</option>
+            </select>
+
+            <p>
+                <label for="keuze">Maak een keuze (je kan er verschillende aanduiden)</label>
+                <select id="keuze" multiple>
+                    <option value="-1">Basic Web Development</option>
+                    <option value="0">User Experience Design</option>
+                    <option value="1">Bouwstenen</option>
+                    <option value="2">Introductie in Programmeren</option>
+                    <option value="3">Geen</option>
+                </select>
+            </p>
+
+            <p>
+                <label for="comment">Commentaar</label>
+                <textarea id="comment" cols="30" rows="5"></textarea>
+            </p>
+
+        </fieldset>
+
+        <p>
+            <input type="submit" value="Versturen">
+        </p>
+
+    </form>
+
+</body>
+
+</html>

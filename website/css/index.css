@@ -1,0 +1,278 @@
+/* ===========================================
+   Main
+   =========================================== */
+
+html {
+    font-size: 62.5%;
+}
+
+
+h2 {
+    font-size: 2.8rem;
+    text-decoration: overline #666;
+}
+
+.grid h2 {
+    text-decoration: none;
+}
+
+p {
+    margin-bottom: 2rem;
+    line-height: 2.3rem;
+    letter-spacing: 0.1rem;
+}
+
+header {
+    background: #F4F6FF;
+    min-width: 100%;
+    height: 30rem;
+}
+
+
+.logoindex {
+    max-width: 40%;
+    min-width: 40%;
+}
+
+.working {
+    max-width: 60%;
+    margin: 1rem 0rem 0rem 10rem;
+}
+
+
+/* ===========================================
+   Kolom
+   =========================================== */
+
+.grid {
+    display: block;
+    justify-content: space-between;
+}
+
+.grid .column {
+    max-width: 100%;
+    margin: 1rem 0rem;
+}
+
+section h2 {
+    text-align: center;
+    padding-top: 4rem;
+}
+
+/*Hover effect laptop*/
+section .grid .column:hover {
+    background-color: #0576EE;
+    transition: 0.4s;
+    color: #fff;
+    transition: 0.4s;
+    border-left-color: #0576EE;
+    border-top-color: #0576EE;
+    border-right-color: #F1C111;
+    border-bottom-color: #F1C111;
+}
+
+section .column a {
+    text-decoration: none;
+    color: #000;
+}
+
+section .column a:hover {
+    color: #fff;
+    transition: 0.4s;
+}
+
+/* ===========================================
+   Section Contact
+   =========================================== */
+
+section .grid1 {
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    margin: 3rem;
+}
+
+section .grid1 .material-icons {
+    color: #fff;
+    background-color: #0576ee;
+    padding: 1rem;
+    border-radius: 10rem;
+    margin: 2rem;
+    transition: 0.6s;
+}
+
+section .grid1 .material-icons:hover {
+    background-color: #F1C111;
+    transition: 0.6s;
+}
+
+section .grid1 a {
+    color: #0576ee;
+    text-decoration: none;
+}
+
+.grid1 .column1 {
+    max-width: 33%;
+}
+
+section .grid1 .column1 .contacteer:hover {
+    color: #0576ee;
+    transition: none;
+}
+
+
+
+/* ===========================================
+   Media Queries
+   =========================================== */
+
+@media (min-width:900px) {
+    .wrapper .grid {
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+        margin: 4rem;
+    }
+
+    .wrapper .grid .column {
+        max-width: 23%
+    }
+
+
+    .wrapper .grid .column:nth-child(1),
+    .column:nth-child(3) {
+        border: solid 0.4rem;
+        border-top-color: #0576EE;
+        border-left-color: #0576EE;
+        border-right-color: #F1C111;
+        border-bottom-color: #F1C111;
+        border-radius: 4rem;
+        transition: 0.4s;
+    }
+
+    .wrapper .grid .column:nth-child(2),
+    .column:nth-child(4) {
+        border: solid 0.4rem;
+        border-bottom-color: #0576EE;
+        border-right-color: #0576EE;
+        border-left-color: #F1C111;
+        border-top-color: #F1C111;
+        border-radius: 4rem;
+        transition: 0.4s;
+    }
+}
+
+/*Smartphone*/
+@media (max-width:450px) {
+
+    p {
+        margin-left: auto;
+        margin-right: auto;
+        width: 25rem;
+        text-align: center;
+    }
+
+    header {
+        height: 20rem;
+    }
+
+    /*Algemene regels*/
+    .grid {
+        display: block;
+        text-align: center;
+    }
+
+    section .grid1 {
+        align-items: center;
+        margin-bottom: auto;
+    }
+
+    header {
+        clip-path: polygon(0 0,
+                100% 0,
+                100% 100%,
+                0 calc(100% - 5vw));
+        background-image:linear-gradient(#0576EE, #0c4887);
+    }
+
+    .grid .column {
+        height: 80rem;
+    }
+
+    .grid .column:nth-child(1),
+    .grid .column:nth-child(3) {
+        background-image:linear-gradient(#0576EE, #0c4887);
+    }
+
+    .grid .column:nth-child(2):hover,
+    .grid .column:nth-child(4):hover {
+        transition: none;
+    }
+
+    .grid .column:nth-child(1) a,
+    .grid .column:nth-child(3) a {
+        color: #fff;
+        transition: none;
+    }
+
+    .grid .column:nth-child(1) h2,
+    .grid .column:nth-child(3) h2 {
+        text-decoration: underline;
+        text-decoration-color: #F1C111;
+    }
+
+
+    /*ContactMogelijkhedenSmartphone1/2*/
+    .grid1 {
+        flex-direction: column;
+    }
+
+    .grid1 p {
+        width: 10rem;
+    }
+
+
+
+    /*ColorLastSection*/
+    .lastSection,
+    .lastSection img {
+        background-color: #F2F2F2;
+    }
+
+
+    section .column .titelgeel {
+        text-decoration: underline;
+        text-decoration-color: #F1C111;
+        color: #000;
+    }
+
+    footer {
+        background-image: linear-gradient(#0576EE, #0c4887);
+    }
+
+    section .grid .column:hover {
+        transition: none;
+    }
+
+
+
+    /* Text Slide 
+    =========================================== */
+
+    .column p {
+        margin-top: 20rem;
+    }
+
+    .working {
+        visibility: hidden;
+    }
+
+    /*Carousel*/
+    .imagesBorder {
+        margin: 5rem;
+    }
+
+
+
+
+}

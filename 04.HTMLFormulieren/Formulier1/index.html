@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Tevredenheidsonderzoek</h1>
+
+    <form>
+        <fieldset>
+            <legend>Persoonlijke gegevens</legend>
+            <p>
+                <label for="name">Naam: *</label>
+                <input type="text" id="name" autofocus required>
+            </p>
+
+            <p>
+                <label for="land">Land: </label>
+                <select id="land">
+                    <option value="-1">België</option>
+                    <option value="0">Duitsland</option>
+                    <option value="1">Frankrijk</option>
+                    <option value="2">Luxemburg</option>
+                    <option value="3">Nederland</option>
+                    <option value="4">Verenigd Koninkrijk</option>
+                </select>
+            </p>
+
+            <p>
+                <label for="email">E-mail *</label>
+                <input type="email" id="email" required>
+            </p>
+
+            <p>
+                <label for="GSM">GSM * </label>
+                <input type="tel" id="GSM" required>
+            </p>
+
+            <p>
+                <label for="date">Geboortedatum</label>
+                <input type="date" id="date">
+            </p>
+
+            <p>
+                <label for="website">Website</label>
+                <input type="url" id="website" placeholder="Voorbeeld www.google.be">
+            </p>
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Over je bestelling</legend>
+
+            <p>
+                <label for="keuze">Maak een keuze (je kan er verschillende aanduiden)</label>
+                <select id="keuze" multiple>
+                    <option value="-1">Positieve ervaring</option>
+                    <option value="0">Klacht over het product</option>
+                    <option value="1">Klacht over de levering</option>
+                    <option value="2">Klacht over de dienst na verkoop</option>
+                    <option value="3">Geen</option>
+                </select>
+            </p>
+
+            <p>
+                <label for="comment">Commentaar</label>
+                <textarea id="comment" cols="30" rows="5"></textarea>
+            </p>
+
+            <p>
+                <label>Hoe ben je op deze site terechtgekomen?</label>
+                <label><input type="radio" name="manier">Toevallig</label>
+                <label><input type="radio" name="manier">Vriend</label>
+                <label><input type="radio" name="manier">Zoekmachine</label>
+            </p>
+
+            <p>
+                <label for="happiness">Hoe tevreden ben je van het totaalpakket? (tussen 0 en 10)</label>
+                <input type="range" min="1" max="10" step="1" value="5" id="happiness">
+            </p>
+
+            <p>
+                <label>Wat zijn je algemene interesses?</label>
+                <label><input type="checkbox" checked>IT</label>
+                <label><input type="checkbox">Netwerk en systeembeheer</label>
+                <label><input type="checkbox">Het huishouden</label>
+            </p>
+
+        </fieldset>
+
+        <p>
+            <input type="submit" value="Versturen">
+        </p>
+
+    </form>
+</body>
+
+</html>

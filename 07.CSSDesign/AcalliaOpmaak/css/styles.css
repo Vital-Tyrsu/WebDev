@@ -1,0 +1,149 @@
+/**
+ *
+ * Common styles
+ *
+ * Vital Tyrsu
+ *
+ */
+
+/* ===========================================
+   General
+   =========================================== */
+
+/* html, body and general element styles here */
+
+html {
+   background-color: #dfdfdf;
+   font-family: 'Roboto', sans-serif;
+   font-size: 13px;
+   line-height: 1.8;
+   
+}
+
+body {
+   background-color: #fff;
+   border-radius: 15px;
+}
+
+a {
+   text-decoration: none;
+}
+
+/* ===========================================
+   Menu
+   =========================================== */
+
+header {
+   padding: 25px 0px 25px 0px;
+}
+
+nav ul {
+   display: flex;
+   list-style: none;
+   padding: 0px 40px 0px 0px;
+}
+
+nav a {
+   color: #000;
+   font-family: 'Open Sans', sans-serif;
+   text-decoration: none;
+   padding: 10px;
+}
+
+nav a:hover {
+   transition: background 0.3s;
+   background-color: #dd2e1c;
+   color: #fff;
+}
+
+/* ===========================================
+   Banner
+   =========================================== */
+
+#banner {
+   border: #dd2e1c solid 4px;
+   background-image: url(../img/slider_photo2.jpg);
+   box-shadow: 0px 5px 15px #000;
+}
+
+#banner p {
+   background-color: black;
+   opacity: 0.7;
+   color: #fff;
+}
+
+/* ... */
+
+/* ===========================================
+   Main
+   =========================================== */
+
+h3 {
+   color: #dd2e1c;
+   text-transform: uppercase;
+}
+
+h3::after {
+   content: " →";
+}
+
+main p {
+   text-align: justify;
+}
+
+#content .more {
+   text-align: right;
+   font-weight: bold;
+}
+
+#content .more a {
+   display: inline-block;
+   border-radius: 5px;
+   border: #dd2e1c solid 2px;
+   padding: 5px 10px;
+   color: #a72214;
+   transition: 0.3s;
+}
+
+#content .more a::after {
+   content: " >>";
+   font-size: 10px;
+   color: #dd2e1c;
+}
+
+#content .more a:hover {
+   background-color: #fdeaeb;
+   text-decoration: underline;
+   transition: 0.3s;
+}
+
+#content img {
+   border: solid 1px #dfdfdf;
+}
+
+.newsletter #email {
+   background-color: #fdeaeb;
+}
+
+.newsletter input {
+   background-color: #dd2e1c;
+   color: #fff;
+}
+
+.newsletter label {
+   visibility: hidden;
+}
+
+/* ===========================================
+   Footer
+   =========================================== */
+
+footer {
+   background: linear-gradient(to bottom, #dfdfdf 20%, #fff 90%);
+   border-top: dotted 2px #808080;
+}
+
+footer p {
+   text-align: center;
+   font-weight: 700;
+}

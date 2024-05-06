@@ -1,0 +1,70 @@
+/* ===========================================
+   Header
+   =========================================== */
+
+header {
+    border-bottom: #ebebeb solid 50px;
+    padding: 0px 0px 120px;
+    margin: 0px 0px 90px;
+}
+
+#topbar{
+    
+    margin: 0px 0px 90px;
+}
+
+
+.wrapper nav ul li {
+    padding: 0px 10px;
+    margin: 25px 0px;
+}
+
+#topbar nav ul li a {
+    padding: 8px 8px;
+}
+
+/* ===========================================
+   Main
+   =========================================== */
+
+main {
+    padding: 100px 0px;
+}
+
+.wrapper p {
+    padding: 10px 0px;
+}
+
+#social li {
+    padding: 10px 0px 0px 90px;
+    margin: 10px 0px;
+}
+
+aside #ctaTwitter {
+    margin-top: -20px;
+    margin-bottom: 10px;
+}
+
+aside #bestelnu {
+    margin: -20px 0px 40px 0px;
+}
+
+.button a {
+    padding: 5px 10px;
+}
+
+/* ===========================================
+   Footer
+   =========================================== */
+
+footer {
+    margin: 10px 0px;
+}
+
+h4 {
+    padding-top: 30px;
+}
+
+footer li {
+    border-bottom: solid 1px #808080;
+}

@@ -1,0 +1,41 @@
+p {
+    margin-bottom: 2rem;
+    color: #666666;
+    line-height: 2.3rem;
+    letter-spacing: 0.1rem;
+ }
+.grid {
+    display: inline;
+    margin: 4rem;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.grid img {
+    border-radius: 1rem;
+}
+
+.grid .column {
+    margin: 4rem 2rem 0rem 2rem;
+}
+
+.midden {
+    text-align: center;
+}
+
+/* ===========================================
+   Media queries
+   =========================================== */
+
+@media (min-width:900px) {
+    .grid {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .column {
+        max-width: 45%;
+    }
+    .first .grid .column:nth-child(3) {
+        order: 3;
+    }
+}
